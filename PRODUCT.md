@@ -1,0 +1,1 @@
+DVT (Dynamic Visual Technologies) Pvt Ltd is an IT solutions company. Contact: careers@dvtworld.com. The supplied brand image has a navy background and vivid multicolor artwork. Audience: potential clients and candidates. No customer metrics, offices, or job vacancies supplied. Service descriptions are proposed marketing copy.

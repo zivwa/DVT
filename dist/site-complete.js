@@ -1,0 +1,12 @@
+const menu=document.querySelector('.menu'),navigation=document.querySelector('.links');
+function closeMenu(){navigation.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='Menu';}
+menu.addEventListener('click',()=>{const open=menu.getAttribute('aria-expanded')!=='true';navigation.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'Close':'Menu';});
+const dropdowns=[...document.querySelectorAll('.nav-dropdown')];
+dropdowns.forEach(d=>d.addEventListener('toggle',()=>{if(d.open)dropdowns.forEach(other=>{if(other!==d)other.open=false;});}));
+document.addEventListener('click',e=>{if(!e.target.closest('.nav-dropdown'))dropdowns.forEach(x=>x.open=false);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){const open=dropdowns.find(x=>x.open);dropdowns.forEach(x=>x.open=false);if(open)open.querySelector('summary').focus();else if(navigation.classList.contains('open')){closeMenu();menu.focus();}}});
+const file=location.pathname.split('/').pop()||'index.html';
+navigation.querySelectorAll('a').forEach(a=>{if(a.getAttribute('href')===file)a.setAttribute('aria-current','page');});
+document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(other=>other.setAttribute('aria-pressed',String(other===b)));document.querySelectorAll('[data-category]').forEach(item=>item.hidden=b.dataset.filter!=='All'&&item.dataset.category!==b.dataset.filter);}));
+const form=document.querySelector('#enquiry-form');
+if(form)form.addEventListener('submit',e=>{e.preventDefault();if(!form.reportValidity())return;const data=new FormData(form);const type=String(data.get('enquiryType')).trim();const body=['Name: '+String(data.get('firstName')).trim()+' '+String(data.get('lastName')).trim(),'Email: '+data.get('email'),'Enquiry type: '+type,'',data.get('description'),'','I agree to discuss my enquiry with DVT.'].join('\n');const uri='mailto:careers@dvtworld.com?subject='+encodeURIComponent('DVT enquiry: '+type)+'&body='+encodeURIComponent(body);const fallback=document.querySelector('#email-fallback');fallback.href=uri;fallback.hidden=false;document.querySelector('#form-status').textContent='Your email draft is ready. Review and send it in your email app. If it did not open, use the link below or email careers@dvtworld.com directly.';location.href=uri;});

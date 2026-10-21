@@ -1,0 +1,16 @@
+# Local hosting identity and generated deployment packages
+.openai/
+outputs/
+*.tar.gz
+*.zip
+
+# Temporary source backup
+build.previous.cjs
+
+# Local dependencies, environment, and editor files
+node_modules/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
