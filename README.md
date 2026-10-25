@@ -2,7 +2,7 @@
 
 Open `dist/index.html` or serve `dist` with any static web server. No installation or build step is required. `node build.cjs` regenerates the four HTML pages.
 
-The complete site includes 25 pages plus three URL aliases: Home, all services, 12 service detail pages, About Us, How We Work, Our Team, Mission & Vision, Our Values, Testimonials, Industries, Careers, Contact, Latest News, and Privacy Information. See `page-inventory.json` and `REFERENCE-COVERAGE.md` for the full coverage.
+The complete site includes 21 pages plus three URL aliases: Home, all services, 8 service detail pages, About Us, How We Work, Our Team, Mission & Vision, Our Values, Testimonials, Industries, Careers, Contact, Latest News, and Privacy Information. See `page-inventory.json` and `REFERENCE-COVERAGE.md` for the full coverage.
 
 The contact form includes all six reference fields and opens a validated email draft addressed to careers@dvtworld.com. It does not send email from a server. Visitors review and send the message in their email application.
 

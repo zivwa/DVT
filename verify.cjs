@@ -1,7 +1,7 @@
 const fs=require('fs'),assert=require('assert'),vm=require('vm');
 require('./check.cjs');
 const inventory=JSON.parse(fs.readFileSync('page-inventory.json'));
-assert.equal(inventory.length,25);
+assert.equal(inventory.length,21);
 // Datalist options in this site use the HTML-permitted omitted end tag.
 const voids=new Set('area base br col embed hr img input link meta param source track wbr option'.split(' '));
 for(const {file} of inventory){
@@ -33,4 +33,4 @@ assert(params.get('body').includes(payload.description));
 assert(params.get('body').includes('A & B Example'));
 assert.equal(el('#email-fallback').hidden,false);
 context.location.href='';form.reportValidity=()=>false;form.listeners.submit({preventDefault(){}});assert.equal(context.location.href,'');
-console.log('Verified 25 page structures, branding, contact fields, email encoding, fallback, and validation guard.');
+console.log('Verified 21 page structures, branding, contact fields, email encoding, fallback, and validation guard.');

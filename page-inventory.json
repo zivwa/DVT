@@ -52,51 +52,35 @@
     "name": "Privacy Information"
   },
   {
-    "file": "rcm.html",
-    "name": "Revenue Cycle Management"
+    "file": "ai.html",
+    "name": "Artificial Intelligence"
   },
   {
-    "file": "data-entry.html",
-    "name": "Data Entry"
+    "file": "software-engineering.html",
+    "name": "Software Engineering"
   },
   {
-    "file": "hosting.html",
-    "name": "Hosting Services"
+    "file": "data-automation.html",
+    "name": "Data and Automation"
   },
   {
-    "file": "testing.html",
-    "name": "Software Testing Automation"
-  },
-  {
-    "file": "cms.html",
-    "name": "CMS Platforms"
+    "file": "cloud-solutions.html",
+    "name": "Cloud Solutions"
   },
   {
     "file": "bpo.html",
     "name": "BPO"
   },
   {
-    "file": "kpo.html",
-    "name": "KPO"
+    "file": "technical-support.html",
+    "name": "Technical Support"
   },
   {
-    "file": "web-site.html",
-    "name": "Web Development"
+    "file": "desktop-support.html",
+    "name": "Desktop Support"
   },
   {
-    "file": "app.html",
-    "name": "App Development"
-  },
-  {
-    "file": "digital.html",
-    "name": "Digital Marketing"
-  },
-  {
-    "file": "annotation.html",
-    "name": "Data Annotation"
-  },
-  {
-    "file": "payment-gateway.html",
-    "name": "Payment Gateway"
+    "file": "us-mortgage.html",
+    "name": "US Mortgage"
   }
 ]

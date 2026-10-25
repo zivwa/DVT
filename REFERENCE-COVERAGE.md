@@ -6,13 +6,13 @@ Reference reviewed: https://www.castleskysoft.com/ and its linked company, indus
 | --- | --- |
 | Main navigation | Home, Company dropdown, Industries, Services mega menu, Contact |
 | Company | About Us, How We Work, Our Team, Mission & Vision, Our Values, Testimonials, Careers |
-| Home | Photo banner, five descriptive attributes, 12 service tiles, seven partnership principles, five-stage delivery process, ten client engagement topics |
-| Services | RCM, Data Entry, Hosting, Software Testing Automation, CMS, BPO, KPO, Web Development, App Development, Digital Marketing, Data Annotation, Payment Gateway |
+| Home | Photo banner, five descriptive attributes, 8 service tiles, seven partnership principles, five-stage delivery process, ten client engagement topics |
+| Services | Artificial Intelligence, Software Engineering, Data and Automation, Cloud Solutions, BPO, Technical Support, Desktop Support, US Mortgage |
 | Service details | Topic coverage, service sidebar, enquiry link, careers/news/contact navigation |
-| Industries | Overview, Cloud/IT/KPO/BPO/RCM focus filters, strategy and results sections |
+| Industries | Overview, Cloud Solutions/Software Engineering/AI/BPO/Data & Automation focus filters, strategy and results sections |
 | About | Introduction and fields for projects complete, happy clients, skilled experts, finished projects, team size |
 | Values | Integrity, Innovation, Client-Centric Approach, Quality Commitment, Collaboration, Adaptability, Continuous Improvement |
-| Careers | Four reasons, current opportunities section, five expandable role interest areas, email enquiry |
+| Careers | 'How We Hire' 4-stage hiring process, Open Positions with 10 department filters (.NET, AI, Business Analysis, Cloud, Data & AI, Java, Python, FDE, SAP Finance, NON - IT), direct role applications |
 | Contact form | Name, Last Name, Email Address, Enquiry Type, Enquiry Description, required consent, action button |
 | Contact details | careers@dvtworld.com, telephone field, India and USA location fields |
 | Footer | Services, Company, Support, Privacy Policy, Social, Where We Are, copyright, back to top |
@@ -28,4 +28,4 @@ The form validates required fields and email format, encodes the enquiry, and op
 
 ## Checks
 
-`node build.cjs` regenerates all 25 pages plus three compatible URL aliases. `node verify.cjs` verifies page structure, local links, logo presence, DVT identity, required contact fields, email encoding, fallback behavior, and the invalid-form guard. `node --check dist/site-complete.js` validates JavaScript syntax. Browser rendering could not be checked because no browser surface was available in the session.
+`node build.cjs` regenerates all 21 pages plus three compatible URL aliases. `node verify.cjs` verifies page structure, local links, logo presence, DVT identity, required contact fields, email encoding, fallback behavior, and the invalid-form guard. `node --check dist/site-complete.js` validates JavaScript syntax. Browser rendering could not be checked because no browser surface was available in the session.
